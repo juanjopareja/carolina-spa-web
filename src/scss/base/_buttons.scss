@@ -1,0 +1,11 @@
+@use 'variables' as var; 
+@use 'mixins' as mix; 
+
+
+.btn {
+    @include mix.button(var.$white, var.$black);
+}
+
+.black-button {
+    @include mix.button(var.$black, var.$white);
+}
