@@ -48,3 +48,20 @@
     gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin headingItalic {
+    text-align: center;
+    color: var.$secondary;
+    font-family: var.$italicFont;
+    line-height: .8;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 4rem;
+
+    span {
+        color: var.$black;
+        display: block;
+        text-transform: uppercase;
+        font-family: var.$mainFont;
+    }
+}

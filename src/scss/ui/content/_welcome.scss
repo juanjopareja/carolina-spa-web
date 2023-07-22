@@ -5,7 +5,7 @@
     text-align: center;
 
     &__heading{
-    
+        @include mix.headingItalic;
     }
 
     &__text {
