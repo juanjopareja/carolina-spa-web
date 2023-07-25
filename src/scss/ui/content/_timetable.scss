@@ -1,0 +1,41 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.timetable {
+    background-image: linear-gradient(to bottom, var.$primary 0%, var.$primary 50%, transparent 50%),
+    url(../img/bg_timetable.jpg);
+    background-repeat: no-repeat;
+    background-position: center, bottom center;
+    color: var.$white;
+
+    @include mix.tablet { 
+        background-image: linear-gradient(to right, var.$primary 0%, var.$primary 50%, transparent 50%),
+        url(../img/bg_timetable.jpg);
+        background-position: center, top right;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+
+        @include mix.tablet { 
+            grid-template-rows: unset;
+
+            @include mix.grid(2, 5rem);
+        }
+    }
+
+    &__content {
+        padding: 5rem 0;
+    }
+
+    &__heading {
+        @include mix.heading;
+    }
+
+    &__text {
+        font-size: 2.2rem;
+        line-height: 1.8;
+        text-align: center;
+    }
+}
