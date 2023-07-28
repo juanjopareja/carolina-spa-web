@@ -1,0 +1,29 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.reservation {
+    background-image: url(../img/bg_dates.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5rem 0;
+    text-align: center;
+
+    &__heading {
+        @include mix.heading;
+        color: var.$white;
+        font-size: 6rem;
+    }
+
+    &__text {
+        max-width: 60rem;
+        margin: 0 auto;
+        color: var.$white;
+        line-height: 2;
+    }
+
+    &__link {
+        @include mix.button(var.$primary, var.$white);
+        padding: 2rem 10rem;
+    }
+}
