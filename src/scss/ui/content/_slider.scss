@@ -10,4 +10,8 @@
         position: relative;
         transition-property: transform;
     }
+
+    &__image {
+        width: 100%;
+    }
 }
