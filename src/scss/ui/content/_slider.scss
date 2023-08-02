@@ -2,6 +2,7 @@
 
 .slider {
     overflow: hidden;
+    position: relative;
 
     &__slide {
         height: 100%;
@@ -13,5 +14,18 @@
 
     &__image {
         width: 100%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: var.$white;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var.$white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var.$primary;
     }
 }

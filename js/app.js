@@ -5,5 +5,7 @@ window.swiper = new Swiper({
     autoplay: {
         delay: 5000
     },
-    loop: true
+    loop: true,
+    pagination: true,
+    navigation: true
 });
